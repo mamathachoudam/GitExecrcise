@@ -39,7 +39,11 @@ input[type=text], select {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+<<<<<<< HEAD
   border-radius: 3px;
+=======
+  border-radius: 4px;
+>>>>>>> c98af53939e0eba90c658d0206649959f49d90e0
   box-sizing: border-box;
   
 }
