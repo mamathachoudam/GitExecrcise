@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 public class NextLook extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	
 
     /**
      * Default constructor. 
@@ -31,11 +31,11 @@ public class NextLook extends HttpServlet {
 	    try {
 			String nextLookNumber = LookAndSay.nextLook(request.getParameter("seq"));
 			PrintWriter out = response.getWriter();
-			
+
 			RequestDispatcher rs=request.getRequestDispatcher("/index.jsp");
 			rs.include(request, response);
 			out.println("<div><label> Output:</label></div>");
-			out.println("<div><textarea rows=5 cols=100>" + nextLookNumber + "</textarea></div>");
+			out.println("<div><textarea rows=4 cols=100>" + nextLookNumber + "</textarea></div>");
 			out.close();
 	    }
 	    catch(Exception e)
