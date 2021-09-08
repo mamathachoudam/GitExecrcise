@@ -35,7 +35,7 @@ public class NextLook extends HttpServlet {
 			RequestDispatcher rs=request.getRequestDispatcher("/index.jsp");
 			rs.include(request, response);
 			out.println("<div><label> Output:</label></div>");
-			out.println("<div><textarea rows=4 cols=100>" + nextLookNumber + "</textarea></div>");
+			out.println("<div><textarea rows=5 cols=100>" + nextLookNumber + "</textarea></div>");
 			out.close();
 	    }
 	    catch(Exception e)
